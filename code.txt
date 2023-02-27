@@ -1,0 +1,21 @@
+const myArray = [1, 2, 3, 4, 5];
+
+const doubledArray = myArray.map(num => num * 2);
+
+console.log(doubledArray);
+
+// add a new number to the original array
+myArray.push(6);
+
+// add a new element to the doubledArray
+doubledArray.push(12);
+
+// filter out odd numbers from the original array
+const evenArray = myArray.filter(num => num % 2 === 0);
+
+console.log(evenArray);
+
+// reduce the doubledArray to its sum
+const sum = doubledArray.reduce((acc, num) => acc + num, 0);
+
+console.log(sum);
